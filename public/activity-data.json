@@ -1,0 +1,50 @@
+[
+  {
+    "id": "124e13b9-2d54-4b2f-a74d-a77b362d6ead",
+    "name": "Have Breakfast",
+    "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.",
+    "time": 15,
+    "img": "https://i.ibb.co/bdwYGBd/heather-ford-teuvn-OXOGVo-unsplash.jpg",
+    "category": "Mandatory"
+  },
+  {
+    "id": "124e13b9-2d54-4b2f-a74d-a77b362d6ead",
+    "name": "Take a Shower",
+    "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.",
+    "time": 30,
+    "img": "https://i.ibb.co/CtHzhmZ/kevin-baquerizo-l-Jew-No29uf0-unsplash.jpg",
+    "category": "Mandatory"
+  },
+  {
+    "id": "124e13b9-2d54-4b2f-a74d-a77b362d6ead",
+    "name": "Do Study",
+    "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.",
+    "time": 120,
+    "img": "https://i.ibb.co/fHzfB3s/little-boy-doing-school-online.jpg",
+    "category": "Mandatory"
+  },
+  {
+    "id": "124e13b9-2d54-4b2f-a74d-a77b362d6ead",
+    "name": "Have Lunch",
+    "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.",
+    "time": 20,
+    "img": "https://i.ibb.co/r7XKRHx/family-having-indian-food.jpg",
+    "category": "Mandatory"
+  },
+  {
+    "id": "124e13b9-2d54-4b2f-a74d-a77b362d6ead",
+    "name": "Do Excercise",
+    "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.",
+    "time": 60,
+    "img": "https://i.ibb.co/qd83K1v/blocks-fletcher-3-Pa-UEEcw-Mc-unsplash.jpg",
+    "category": "Optional"
+  },
+  {
+    "id": "124e13b9-2d54-4b2f-a74d-a77b362d6ead",
+    "name": "Go for a walk",
+    "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.",
+    "time": 60,
+    "img": "https://i.ibb.co/S5Z4ZgT/close-up-running-shoes-fitness-women-training-jogging.jpg",
+    "category": "Optional"
+  }
+]
