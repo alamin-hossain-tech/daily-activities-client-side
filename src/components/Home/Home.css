@@ -1,0 +1,21 @@
+.home-container {
+  display: flex;
+}
+
+.left-container {
+  width: 80%;
+  background-color: #f2f4fa;
+}
+
+.right-container {
+  width: 20%;
+  height: 100vh;
+  position: sticky;
+  top: 0;
+}
+
+.container {
+  max-width: 70%;
+  background-color: bisque;
+  margin: 0 auto;
+}
