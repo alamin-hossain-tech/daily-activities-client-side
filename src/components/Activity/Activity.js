@@ -2,7 +2,7 @@ import React from "react";
 import "./Activity.css";
 
 const Activity = (props) => {
-  console.log(props);
+  // console.log(props);
 
   return (
     <div>
@@ -20,7 +20,12 @@ const Activity = (props) => {
           <strong>Required Time: </strong>
           {props.activity.time} Minutes
         </p>
-        <button className="add-list-btn">Added to List</button>
+        <button
+          onClick={() => props.addToList(props.activity)}
+          className="add-list-btn"
+        >
+          Added to List
+        </button>
       </div>
     </div>
   );

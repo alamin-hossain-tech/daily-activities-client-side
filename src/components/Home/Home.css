@@ -11,8 +11,9 @@
   width: 20%;
   height: 100vh;
   position: sticky;
-  top: 0;
+  top: 0px;
   margin: 0 1%;
+  /* padding-top: 20px; */
 }
 
 .container {
@@ -35,4 +36,8 @@
   .right-container {
     width: 100%;
   }
+}
+
+.space {
+  padding: 20px 0px;
 }

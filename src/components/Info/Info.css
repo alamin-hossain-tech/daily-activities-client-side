@@ -5,7 +5,7 @@
 }
 .profile-img {
   border-radius: 50%;
-  width: 30%;
+  width: 20%;
 }
 
 .profile-info h3 {
@@ -29,6 +29,11 @@
 
 .break-info {
   padding: 20px;
+  margin-top: 5%;
+}
+
+.activity-info {
+  margin-top: 5%;
 }
 .short-info button {
   border: none;
@@ -42,4 +47,20 @@
 .short-info button:active {
   background-color: #5d5fef;
   color: #fff;
+}
+
+.activity-short-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.activity-tittle {
+  margin-top: 10%;
+  margin-bottom: 0;
+}
+
+.activity-complete-btn {
+  margin-top: 10%;
 }

@@ -1,10 +1,23 @@
 import React from "react";
+import React, { useEffect, useState } from "react";
 import Activities from "../Activities/Activities";
 import "./Home.css";
 import logo from "../../Daily.png";
 import Info from "../Info/Info";
 
 const Home = () => {
+  const [activities, setActivities] = useState([]);
+  const [list, setList] = useState([]);
+  useEffect(() => {
+    fetch("activity-data.json")
+      .then((res) => res.json())
+      .then((data) => setActivities(data));
+  }, []);
+  // console.log(activities);
+  const addToList = (id) => {
+    console.log(id);
+    setList([id]);
+  };
   return (
     <div>
       <div className="home-container">
@@ -15,7 +28,7 @@ const Home = () => {
           </div>
         </div>
         <div className="right-container">
-          <h1>right</h1>
+          <div className="space"></div>
           <Info></Info>
         </div>
       </div>
