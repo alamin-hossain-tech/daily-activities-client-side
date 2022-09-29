@@ -1,0 +1,45 @@
+.profile {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.profile-img {
+  border-radius: 50%;
+  width: 30%;
+}
+
+.profile-info h3 {
+  margin-bottom: 0;
+}
+
+.profile-info p {
+  margin-top: 5px;
+}
+
+.body-info,
+.break-info,
+.activity-info {
+  display: flex;
+  justify-content: space-between;
+  background-color: #f2f4fa;
+  padding: 0 20px;
+  margin-top: 10%;
+  border-radius: 15px;
+}
+
+.break-info {
+  padding: 20px;
+}
+.short-info button {
+  border: none;
+  background-color: #fff;
+  padding: 20px 10px;
+  font-weight: 600;
+  border-radius: 50%;
+}
+
+.short-info button:hover,
+.short-info button:active {
+  background-color: #5d5fef;
+  color: #fff;
+}

@@ -2,6 +2,7 @@ import React from "react";
 import Activities from "../Activities/Activities";
 import "./Home.css";
 import logo from "../../Daily.png";
+import Info from "../Info/Info";
 
 const Home = () => {
   return (
@@ -15,6 +16,7 @@ const Home = () => {
         </div>
         <div className="right-container">
           <h1>right</h1>
+          <Info></Info>
         </div>
       </div>
     </div>
