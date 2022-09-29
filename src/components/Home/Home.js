@@ -1,9 +1,9 @@
-import React from "react";
 import React, { useEffect, useState } from "react";
 import Activities from "../Activities/Activities";
 import "./Home.css";
 import logo from "../../Daily.png";
 import Info from "../Info/Info";
+import { toast } from "react-toastify";
 
 const Home = () => {
   const [activities, setActivities] = useState([]);
@@ -13,10 +13,18 @@ const Home = () => {
       .then((res) => res.json())
       .then((data) => setActivities(data));
   }, []);
-  // console.log(activities);
+
   const addToList = (id) => {
-    console.log(id);
-    setList([id]);
+    // console.log(id.id);
+    const isExist = list.find((listId) => listId.id === id.id);
+    if (isExist) {
+      toast.error("Selected Already");
+    } else {
+      const newList = [...list, id];
+      setList(newList);
+    }
+    // console.log(isExist);
+    // if(id )
   };
   return (
     <div>
@@ -24,12 +32,15 @@ const Home = () => {
         <div className="left-container">
           <div className="container">
             <img className="logo" src={logo} alt="" />
-            <Activities></Activities>
+            <Activities
+              activities={activities}
+              addToList={addToList}
+            ></Activities>
           </div>
         </div>
         <div className="right-container">
-          <div className="space"></div>
-          <Info></Info>
+          <h1>right</h1>
+          <Info list={list}></Info>
         </div>
       </div>
     </div>

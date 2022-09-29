@@ -6,7 +6,16 @@ import { ToastContainer, toast } from "react-toastify";
 
 import "react-toastify/dist/ReactToastify.css";
 
-const Info = () => {
+const Info = (props) => {
+  // console.log(props);
+  const requiredTimeArr = props.list.map((p) => p.time);
+  console.log(requiredTimeArr);
+  const requiredTime = requiredTimeArr.reduce(
+    (previousValue, currentValue) => previousValue + currentValue,
+    0
+  );
+  // console.log(requiredTime);
+
   return (
     <div>
       <div className="profile">
@@ -66,8 +75,8 @@ const Info = () => {
       <h3 className="activity-tittle">Activity Details</h3>
       <div className="activity-info">
         <div className="activity-short-info">
-          <h4>Required Time:</h4>
-          <p>20 Min</p>
+          <h4>Required Time: </h4>
+          <p>{requiredTime} Min</p>
         </div>
       </div>
       <div className="activity-info">
