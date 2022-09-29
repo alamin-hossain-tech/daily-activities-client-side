@@ -6,10 +6,10 @@ import { ToastContainer, toast } from "react-toastify";
 
 import "react-toastify/dist/ReactToastify.css";
 
-const Info = (props) => {
+const Info = ({ list }) => {
   const [restTime, setRestTime] = useState(0);
 
-  const requiredTimeArr = props.list.map((p) => p.time);
+  const requiredTimeArr = list.map((p) => p.time);
 
   const requiredTime = requiredTimeArr.reduce(
     (previousValue, currentValue) => previousValue + currentValue,
@@ -35,7 +35,11 @@ const Info = (props) => {
   return (
     <div>
       <div className="profile">
-        <img className="profile-img" src="profile-image.png" alt="" />
+        <img
+          className="profile-img"
+          src="https://i.ibb.co/bbTvH7Z/profile-image.png"
+          alt=""
+        />
 
         <div className="profile-info">
           <h3>Al-Amin Hossain</h3>

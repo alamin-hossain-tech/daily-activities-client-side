@@ -2,16 +2,16 @@ import React from "react";
 import Activity from "../Activity/Activity";
 import "./Activities.css";
 
-const Activities = (props) => {
+const Activities = ({ activities, addToList }) => {
   return (
     <div>
       <h3>Select Today's Activities</h3>
       <div className="activity-grid">
-        {props.activities.map((activity) => (
+        {activities.map((activity) => (
           <Activity
             activity={activity}
             key={activity.id}
-            addToList={props.addToList}
+            addToList={addToList}
           ></Activity>
         ))}
       </div>

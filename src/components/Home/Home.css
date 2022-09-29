@@ -4,7 +4,7 @@
 
 .left-container {
   width: 80%;
-  background-color: #f2f4fa;
+  background-color: #e9f9f6;
 }
 
 .right-container {
@@ -47,5 +47,8 @@
   }
   .container {
     margin-bottom: 20%;
+  }
+  .logo {
+    width: 180px;
   }
 }
