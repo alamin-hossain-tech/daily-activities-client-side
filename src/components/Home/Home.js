@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Activities from "../Activities/Activities";
 import "./Home.css";
-import logo from "../../Daily.png";
+import logo from "../../logo.png";
 import Info from "../Info/Info";
 import { toast } from "react-toastify";
 import Faq from "../Faq/Faq";
