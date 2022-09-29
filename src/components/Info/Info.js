@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./Info.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLocationDot } from "@fortawesome/free-solid-svg-icons";
@@ -16,13 +16,21 @@ const Info = (props) => {
     0
   );
 
+  useEffect(() => {
+    getBreakTime();
+  }, []);
+
   const breakTime = (time) => {
     console.log(time);
     setRestTime(time);
     localStorage.setItem("break-time", time);
   };
 
-  const getBreakTime = () => {};
+  const getBreakTime = () => {
+    const storedBreakTime = localStorage.getItem("break-time");
+    console.log(storedBreakTime);
+    setRestTime(+storedBreakTime);
+  };
 
   return (
     <div>
