@@ -107,7 +107,7 @@ const Info = ({ list }) => {
       </div>
       <button
         onClick={() => {
-          toast.success("Congratulations 🎉 ");
+          toast.success("Congratulations 🎉 for completion. ");
         }}
         className="add-list-btn activity-complete-btn"
       >

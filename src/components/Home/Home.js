@@ -4,6 +4,7 @@ import "./Home.css";
 import logo from "../../Daily.png";
 import Info from "../Info/Info";
 import { toast } from "react-toastify";
+import Faq from "../Faq/Faq";
 
 const Home = () => {
   const [activities, setActivities] = useState([]);
@@ -15,13 +16,13 @@ const Home = () => {
   }, []);
 
   const addToList = (id) => {
-    const isExist = list.find((listId) => listId.id === id.id);
-    if (isExist) {
-      toast.error("Selected Already");
-    } else {
-      const newList = [...list, id];
-      setList(newList);
-    }
+    // const isExist = list.find((listId) => listId.id === id.id);
+    // if (isExist) {
+    //   toast.error("Selected Already");
+    // } else {
+    // }
+    const newList = [...list, id];
+    setList(newList);
   };
   return (
     <div>
@@ -33,6 +34,7 @@ const Home = () => {
               activities={activities}
               addToList={addToList}
             ></Activities>
+            <Faq></Faq>
           </div>
         </div>
         <div className="right-container">
