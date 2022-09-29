@@ -36,7 +36,7 @@ const Home = () => {
           </div>
         </div>
         <div className="right-container">
-          <h1>right</h1>
+          <div className="space"></div>
           <Info list={list}></Info>
         </div>
       </div>

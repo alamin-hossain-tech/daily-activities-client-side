@@ -64,3 +64,11 @@
 .activity-complete-btn {
   margin-top: 10%;
 }
+
+@media screen and (max-width: 800px) {
+  .break-info {
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
