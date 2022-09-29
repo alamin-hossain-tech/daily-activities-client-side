@@ -10,10 +10,16 @@ const Activity = (props) => {
         <div className="activity-img">
           <img src={props.activity.img} alt="" />
         </div>
-        <h4>{props.activity.name}</h4>
+        <h3>{props.activity.name}</h3>
         <p className="description">{props.activity.description}</p>
-        <p>{props.activity.category}</p>
-        <p>{props.activity.time} </p>
+        <p>
+          <strong>Category: </strong>
+          {props.activity.category}
+        </p>
+        <p>
+          <strong>Required Time: </strong>
+          {props.activity.time} Minutes
+        </p>
         <button className="add-list-btn">Added to List</button>
       </div>
     </div>

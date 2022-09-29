@@ -15,7 +15,23 @@
 }
 
 .container {
-  max-width: 70%;
-  background-color: bisque;
+  max-width: 90%;
+  /* background-color: bisque; */
   margin: 0 auto;
+}
+
+.logo {
+  width: 250px;
+}
+
+@media screen and (max-width: 800px) {
+  .home-container {
+    flex-direction: column;
+  }
+  .left-container {
+    width: 100%;
+  }
+  .right-container {
+    width: 100%;
+  }
 }

@@ -1,6 +1,7 @@
 import React from "react";
 import Activities from "../Activities/Activities";
 import "./Home.css";
+import logo from "../../Daily.png";
 
 const Home = () => {
   return (
@@ -8,7 +9,7 @@ const Home = () => {
       <div className="home-container">
         <div className="left-container">
           <div className="container">
-            <h1>left</h1>
+            <img className="logo" src={logo} alt="" />
             <Activities></Activities>
           </div>
         </div>

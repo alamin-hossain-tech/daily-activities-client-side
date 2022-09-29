@@ -12,7 +12,7 @@ const Activities = () => {
   console.log(activities);
   return (
     <div>
-      <h1>from activity</h1>
+      <h3>Select Today's Activities</h3>
       <div className="activity-grid">
         {activities.map((activity) => (
           <Activity activity={activity} key={activity.id}></Activity>
