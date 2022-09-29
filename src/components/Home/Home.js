@@ -15,7 +15,6 @@ const Home = () => {
   }, []);
 
   const addToList = (id) => {
-    // console.log(id.id);
     const isExist = list.find((listId) => listId.id === id.id);
     if (isExist) {
       toast.error("Selected Already");
@@ -23,8 +22,6 @@ const Home = () => {
       const newList = [...list, id];
       setList(newList);
     }
-    // console.log(isExist);
-    // if(id )
   };
   return (
     <div>

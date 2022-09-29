@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Info.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLocationDot } from "@fortawesome/free-solid-svg-icons";
@@ -7,14 +7,22 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 const Info = (props) => {
-  // console.log(props);
+  const [restTime, setRestTime] = useState(0);
+
   const requiredTimeArr = props.list.map((p) => p.time);
-  console.log(requiredTimeArr);
+
   const requiredTime = requiredTimeArr.reduce(
     (previousValue, currentValue) => previousValue + currentValue,
     0
   );
-  // console.log(requiredTime);
+
+  const breakTime = (time) => {
+    console.log(time);
+    setRestTime(time);
+    localStorage.setItem("break-time", time);
+  };
+
+  const getBreakTime = () => {};
 
   return (
     <div>
@@ -56,19 +64,19 @@ const Info = (props) => {
       <h3 className="activity-tittle">Add a Break</h3>
       <div className="break-info">
         <div className="short-info">
-          <button>5 Min</button>
+          <button onClick={() => breakTime(5)}>5 Min</button>
         </div>
         <div className="short-info">
-          <button>5 MIn</button>
+          <button onClick={() => breakTime(10)}>10 MIn</button>
         </div>
         <div className="short-info">
-          <button>5 Min</button>
+          <button onClick={() => breakTime(15)}>15 Min</button>
         </div>
         <div className="short-info">
-          <button>5 Min</button>
+          <button onClick={() => breakTime(30)}>30 Min</button>
         </div>
         <div className="short-info">
-          <button>5 Min</button>
+          <button onClick={() => breakTime(60)}>60 Min</button>
         </div>
       </div>
       {/* -------------break-----------  */}
@@ -82,13 +90,12 @@ const Info = (props) => {
       <div className="activity-info">
         <div className="activity-short-info">
           <h4>Break Time:</h4>
-          <p>20 Min</p>
+          <p>{restTime} Min</p>
         </div>
       </div>
       <button
         onClick={() => {
           toast.success("Congratulations 🎉 ");
-          console.log("clicked");
         }}
         className="add-list-btn activity-complete-btn"
       >
